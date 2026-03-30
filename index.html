@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowya AI — The Intelligence AI Is Missing Is Yours</title>
+  <meta name="description" content="The intelligence AI is missing is yours. We build the human layer — taste, judgment, direction — through personalized tools and education.">
+  <meta property="og:title" content="Knowya AI">
+  <meta property="og:description" content="The intelligence AI is missing is yours. Taste. Judgment. Direction. We help people bring their best to AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://knowya.ai">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@knowya_ai">
+  <link rel="icon" type="image/png" href="/avatar.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --cyan: #00D4FF;
+      --cyan-dim: rgba(0, 212, 255, 0.15);
+      --bg: #0a0a0a;
+      --bg-card: #111111;
+      --text: #e8e8e8;
+      --text-dim: #888888;
+      --border: #1a1a1a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: var(--cyan);
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: var(--text-dim);
+      margin-bottom: 32px;
+    }
+
+    .hero-description {
+      font-size: 1.05rem;
+      color: var(--text);
+      max-width: 560px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    /* Pillars */
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .pillar {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: border-color 0.2s;
+    }
+
+    .pillar:hover {
+      border-color: var(--cyan);
+    }
+
+    .pillar-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .pillar h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .pillar p {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+
+    /* Feed section */
+    .feed-section {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+      text-align: center;
+    }
+
+    .feed-section h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: var(--text-dim);
+    }
+
+    .feed-embed {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      min-height: 500px;
+    }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      padding: 60px 24px 40px;
+      border-top: 1px solid var(--border);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cta-section h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .cta-section p {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 32px;
+      border-radius: 100px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--cyan);
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background: #33ddff;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--cyan);
+      border: 1px solid var(--cyan);
+      margin-left: 12px;
+    }
+
+    .btn-secondary:hover {
+      background: var(--cyan-dim);
+    }
+
+    /* Coming soon badge */
+    .coming-soon {
+      display: inline-block;
+      font-size: 0.75rem;
+      color: var(--cyan);
+      border: 1px solid rgba(0, 212, 255, 0.3);
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-top: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .hero { padding: 60px 20px 40px; }
+      .hero h1 { font-size: 1.8rem; }
+      .tagline { font-size: 1rem; }
+      .pillars { grid-template-columns: 1fr; gap: 16px; }
+      .btn-secondary { margin-left: 0; margin-top: 12px; display: block; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="/avatar.png" alt="Knowya AI" class="logo">
+    <h1>Knowya <span>AI</span></h1>
+    <p class="tagline">The intelligence AI is missing is yours.</p>
+    <p class="hero-description">
+      AI can process, pattern-match, and scale. But it can't taste, judge, direct, or care. The people who thrive won't be those who use AI the most — they'll be those who bring the most to AI. We build the tools and education to help you do exactly that.
+    </p>
+  </section>
+
+  <!-- Three Pillars -->
+  <section class="pillars">
+    <div class="pillar">
+      <span class="pillar-icon">Build</span>
+      <h3>Taste & Judgment</h3>
+      <p>Personalized AI agents that learn your standards, your decision patterns, your taste — not just your commands.</p>
+    </div>
+    <div class="pillar">
+      <span class="pillar-icon">Learn</span>
+      <h3>Direction & Calibration</h3>
+      <p>Education that teaches you how to think with AI — when to trust it, when to override it, and how to give it direction that matters.</p>
+    </div>
+    <div class="pillar">
+      <span class="pillar-icon">Live</span>
+      <h3>Human Potential</h3>
+      <p>Technology should serve life, not consume it. Use AI to work smarter so you can live better. The future is human.</p>
+    </div>
+  </section>
+
+  <!-- Latest from X -->
+  <section class="feed-section">
+    <h2>Latest Thoughts</h2>
+    <div class="feed-embed">
+      <a class="twitter-timeline"
+         data-theme="dark"
+         data-chrome="noheader nofooter noborders transparent"
+         data-tweet-limit="5"
+         href="https://twitter.com/knowya_ai">
+        Loading posts from @knowya_ai...
+      </a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Follow the journey</h2>
+    <p>Daily insights on AI, technology, and what it means for how we work and live.</p>
+    <a href="https://x.com/knowya_ai" class="btn btn-primary" target="_blank" rel="noopener">Follow @knowya_ai</a>
+    <br>
+    <span class="coming-soon">Personalized AI tools & education — coming soon</span>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Knowya AI &middot; <a href="https://x.com/knowya_ai">@knowya_ai</a></p>
+  </footer>
+
+</body>
+</html>
