@@ -92,11 +92,17 @@
       margin: 0 auto;
     }
 
+    .logo-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
     .logo {
-      width: 72px;
-      height: 72px;
-      border-radius: 18px;
-      margin-bottom: 28px;
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
       box-shadow: 0 0 40px rgba(0, 212, 255, 0.15);
     }
 
@@ -104,7 +110,7 @@
       font-size: 2.8rem;
       font-weight: 700;
       letter-spacing: -0.03em;
-      margin-bottom: 20px;
+      margin: 0;
       line-height: 1.1;
     }
 
@@ -445,10 +451,10 @@
     <!-- Hero -->
     <section class="hero">
       <div class="fade-up">
-        <img src="/avatar.png" alt="Knowya AI" class="logo">
-      </div>
-      <div class="fade-up">
-        <h1>Knowya <span>AI</span></h1>
+        <div class="logo-row">
+          <img src="/avatar.png" alt="Knowya AI" class="logo">
+          <h1>Knowya <span>AI</span></h1>
+        </div>
         <p class="hero-statement">Everyone's building AI. We're building the human layer.</p>
       </div>
       <div class="fade-up">
