@@ -367,7 +367,7 @@
       letter-spacing: -0.02em;
     }
 
-    .cta-section p {
+    .cta-section > p {
       color: var(--text-dim);
       font-size: 0.95rem;
       margin-bottom: 28px;
@@ -400,13 +400,23 @@
       border: 1px solid var(--cyan-border);
       color: var(--cyan);
       background: transparent;
-      margin-top: 12px;
+      font-size: 0.88rem;
+      padding: 12px 28px;
     }
 
     .btn-secondary:hover {
       border-color: var(--cyan);
       background: var(--cyan-glow);
       transform: translateY(-2px);
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
     }
 
     .coming-soon {
@@ -540,10 +550,10 @@
     <section class="cta-section">
       <h2>Follow the journey</h2>
       <p>Daily insights on AI, technology, and the future of human potential.</p>
-      <a href="https://x.com/knowya_ai" class="btn btn-primary" target="_blank" rel="noopener">Follow @knowya_ai</a>
-      <br>
-      <a href="mailto:contact@knowya.ai" class="btn btn-secondary">contact@knowya.ai</a>
-      <br>
+      <div class="cta-buttons">
+        <a href="https://x.com/knowya_ai" class="btn btn-primary" target="_blank" rel="noopener">Follow @knowya_ai</a>
+        <a href="mailto:contact@knowya.ai" class="btn btn-secondary">contact@knowya.ai</a>
+      </div>
       <span class="coming-soon">Human layer tools & education — coming soon</span>
     </section>
 
